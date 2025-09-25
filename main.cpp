@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-
+#include <vector>
 
 using namespace std;
 
@@ -8,7 +8,6 @@ using namespace std;
 static double calculator(){
 	int a,b;
 	int result;
-	cout << &result;
 	cout << "First number: ";
 	cin >> a;
 	cout << "Second number: ";
@@ -16,6 +15,15 @@ static double calculator(){
 
 	return result;
 }
+
+void *malloc(size_t size){
+	void *block;
+	block = sbrk(size);
+	if (block == (void*) -1)
+		return NULL;
+	return block;
+}
+
 int main() {
 	int x = 5;
 	string first;
@@ -30,3 +38,5 @@ int main() {
 	return 0;
 
 }
+
+
