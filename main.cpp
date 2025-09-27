@@ -5,33 +5,20 @@
 using namespace std;
 
 
-template<typename T>
-void print(const T& value) {
-	cout << "Printing value:" << value << '\n';
-}
-
-void func_overload(int y){
-	y -= 5;
-	cout << "Overload on int: " << y << '\n';
-}
-
-void func_overload(string ex){
-	cout << "Overload on string: " << ex << "\nLength: "<< ex.length() <<'\n';
-}
 
 int main(){
-	func_overload(100);
-	func_overload("Shi gua");
-	int a = 5;
-	int b = 10;
-	auto glambda = [=]()->bool {return a < b; };
-	cout << "Lambda result: " << glambda() << '\n';
-	print(42);
-	print(true);
-	print("Printting non-defined value");
-
+	void* void_ptr;
 	int x = 5;
-	string first;
+	void_ptr = &x;
+	cout << "Void pointer var: " << *(static_cast<int*>(void_ptr)) << '\n';
+	int *ptr = &x;
+	int p = *ptr;
+	cout << p << '\n';
+	thread_local string first;
+	int* heap= new int;
+	*heap = 10;
+	cout << "Int in heap: " << *heap << '\n';
+	delete heap;
 	cout << "First action: ";
 	getline(cin, first);
 	cout << "Your string: "<< first << '\n';
