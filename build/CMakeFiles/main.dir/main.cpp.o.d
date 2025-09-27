@@ -174,4 +174,22 @@ CMakeFiles/main.dir/main.cpp.o: /home/mk/code/my_cpp_project/main.cpp \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/memory \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/13/bits/align.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/c++/13/bits/unique_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr.h \
+ /usr/include/c++/13/bits/shared_ptr_base.h \
+ /usr/include/c++/13/bits/allocated_ptr.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/ext/concurrence.h \
+ /usr/include/c++/13/bits/shared_ptr_atomic.h \
+ /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13/backward/auto_ptr.h \
+ /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h
